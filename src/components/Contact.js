@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
-import axios from 'axios';
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,20 +15,7 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post('http://localhost:3001/send-email', formData, {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-      console.log('Email sent successfully:', response);
-      alert('Message sent successfully!');
-      setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      console.error('Error sending message:', error);
-      alert('Error sending message. Please try again later.');
-    }
+    
   };
 
   return (
