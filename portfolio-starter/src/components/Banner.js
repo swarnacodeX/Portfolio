@@ -5,6 +5,7 @@ import {FaGithub,FaInstagram,FaFacebook,FaLinkedin} from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import {motion} from  "framer-motion";
 import {fadeIn} from '../variants';
+import {Link} from 'react-scroll';
 
 const Banner = () => {
   return(
@@ -36,21 +37,23 @@ const Banner = () => {
               repeat={Infinity}
               />
             </div>
-            <motion.p 
+            {/* <motion.p 
             variants={fadeIn('up',0.5)} 
             initial="hidden" whileInView={'show'}
              viewport={{once:false,amount:0.7}}
              className='mb-8 max-w-lg mx-auto lg;mx-0'>
-                pod
-            </motion.p>
+              
+            </motion.p> */}
             <motion.div 
             variants={fadeIn('up',0.4)} 
             initial="hidden" whileInView={'show'}
              viewport={{once:false,amount:0.7}}
              className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+              <Link to='contact'>
               <button className='btn btn-lg'>
                 Contact Me
               </button>
+              </Link>
               <a className='text-gradient btn-link'>
                 My CV
               </a>
