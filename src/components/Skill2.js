@@ -47,24 +47,18 @@ const SkillContainer2 = () => {
 					<div className='skills__data'>
 						<i className='bx bx-badge-check'></i>
 						<div>
-							<h3 className='skills__name'>Power-BI</h3>
+							<h3 className='skills__name'>SpringBoot</h3>
 							<span className='skills__level'>Intermediate</span>
 						</div>
 					</div>
 					<div className='skills__data'>
 						<i className='bx bx-badge-check'></i>
 						<div>
-							<h3 className='skills__name'>MongoDB</h3>
+							<h3 className='skills__name'>MySQL Workbench</h3>
 							<span className='skills__level'>Intermediate</span>
 						</div>
 					</div>
-					{/* <div className='skills__data'>
-						<i className='bx bx-badge-check'></i>
-						<div>
-							<h3 className='skills__name'></h3>
-							<span className='skills__level'>Intermediate</span>
-						</div>
-					</div> */}
+					
 					
 				</div>
 			</div>

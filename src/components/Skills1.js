@@ -9,7 +9,7 @@ const SkillContainer1 = () => {
 					<div className='skills__data'>
 						<i className='bx bx-badge-check'></i>
 						<div>
-							<h3 className='skills__name'>Data Analytics</h3>
+							<h3 className='skills__name'>Microservices</h3>
 							<span className='skills__level'>Intermediate</span>
 						</div>
 					</div>
@@ -54,7 +54,7 @@ const SkillContainer1 = () => {
 					<div className='skills__data'>
 						<i className='bx bx-badge-check'></i>
 						<div>
-							<h3 className='skills__name'>AI/ML</h3>
+							<h3 className='skills__name'>Cloud Architecture</h3>
 							<span className='skills__level'>Basics</span>
 						</div>
 					</div>

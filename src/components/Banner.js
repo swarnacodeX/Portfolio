@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../assets/home.png';
+import Image from '../assets/macbookaesthetics.jpg';
 import {} from 'react-icons/fa';
 import {FaGithub,FaInstagram,FaFacebook,FaLinkedin} from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
@@ -13,7 +13,7 @@ const Banner = () => {
       <div className="container mx-auto">
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center
         lg:gap-x-12'>
-          {/* <div> text</div> */}
+        
           <div className='flex-1 text-center font-secondary
           lg:text-left'>
             <motion.div variants={fadeIn('up',0.4)} 
@@ -26,9 +26,9 @@ const Banner = () => {
             font-secondary font-semibold uppercase leading-[1]'>
               <span className='text-white mr-4'>I am </span>
               <TypeAnimation sequence={[
-                'A Full Stack Developer',
+                'A Full Stack Enthusiast',
                 2000,
-                'A Data Analyst',
+                'A Full Stack Developer',
                 2000,
               ]}
               speed={50}
@@ -37,13 +37,7 @@ const Banner = () => {
               repeat={Infinity}
               />
             </div>
-            {/* <motion.p 
-            variants={fadeIn('up',0.5)} 
-            initial="hidden" whileInView={'show'}
-             viewport={{once:false,amount:0.7}}
-             className='mb-8 max-w-lg mx-auto lg;mx-0'>
-              
-            </motion.p> */}
+            
             <motion.div 
             variants={fadeIn('up',0.4)} 
             initial="hidden" whileInView={'show'}
@@ -54,9 +48,9 @@ const Banner = () => {
                 Contact Me
               </button>
               </Link>
-              <a className='text-gradient btn-link'>
+              <button className='text-gradient btn-link'>
                 My CV
-              </a>
+            </button>
             </motion.div>
             <motion.div 
             variants={fadeIn('up',0.7)} 
@@ -83,7 +77,7 @@ const Banner = () => {
           initial="hidden" whileInView={'show'}
            className='hidden lg:flex flex-1 max-w-[320px]
           lg:max-w-[482px]'>
-            <img src={Image}  alt='Avatar' />
+            <img src={Image}  alt='Avatar' class="rounded-lg w-72 h-96"/>
           </motion.div>
         </div>
       </div>
