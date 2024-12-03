@@ -2,11 +2,21 @@ import React from 'react';
 import  Img1 from '../assets/rajyasahayog.png';
 import Img2 from '../assets/innov.png';
 import Img3 from '../assets/book.png';
+import { Link } from 'react-router-dom';
 import Img4 from '../assets/Screenshot 2024-07-18 195316.png';
 import {motion} from 'framer-motion';
 import {fadeIn} from '../variants';
 
 const Work = () => {
+  function goToInnovacion(){
+    window.location.href = "https://shubhangan-innovacion-2024.netlify.app/";
+  }
+  function goToBookLovers(){
+    window.location.href = "https://booklovers.onrender.com/";
+  }
+  function goToSIH(){
+    window.location.href = "https://rajya-sahayog.onrender.com/";
+  }
   return (
   <section  className='section' id='work'>
     <div className='container mx-auto'>
@@ -37,7 +47,7 @@ const Work = () => {
           <img className='group-hover:scale-125 transition-all duration-500' src={Img1} alt=''/>
           <div className='absolute -bottom-full left-12
           group-hover:bottom-24 transition-all duration-500 z-50'>
-            <span className='text-gradient'>
+            <span onClick={goToSIH} className='text-gradient'>
             SMART INDIAN HACKATHON 2K23
             </span>
            
@@ -79,7 +89,7 @@ const Work = () => {
           <img className='group-hover:scale-125 transition-all duration-500' src={Img2} alt=''/>
           <div className='absolute -bottom-full left-12
           group-hover:bottom-24 transition duration-700 z-50'>
-            <span className='text-gradient'>
+            <span onClick={goToInnovacion} className='text-gradient'>
             INNOVACION 2K24
             </span>
            
@@ -95,7 +105,7 @@ const Work = () => {
           <img className='group-hover:scale-125 transition-all duration-500' src={Img3} alt=''/>
           <div className='absolute -bottom-full left-12
           group-hover:bottom-24 transition duration-700 z-50'>
-            <span className='text-gradient'>
+            <span onClick={goToBookLovers}  className='text-gradient'>
             BOOKLOVERS-ECOMMERCE PLATFORM
             </span>
            

@@ -15,8 +15,7 @@ const About = () => {
           variants={fadeIn('up',0.3)} 
           initial="hidden" whileInView={'show'}
            viewport={{once:false,amount:0.7}}
-            className='flex-1 bg-about bg-contain bg-no-repeat h-[640px]
-           bg-top'>
+            className='flex-1 bg-about bg-contain bg-no-repeat h-[500px] w-64 rounded-lg'>
         </motion.div>
         <motion.div className='flex-1'
         variants={fadeIn('up',0.3)} 
