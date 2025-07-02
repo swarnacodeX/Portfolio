@@ -7,7 +7,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           react: ['react', 'react-dom'],
-          ui: ['@mui/material', '@emotion/react'], // example if you're using MUI
+           // example if you're using MUI
         }
       }
     },
