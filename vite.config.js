@@ -7,7 +7,6 @@ export default defineConfig({
       output: {
         manualChunks: {
           react: ['react', 'react-dom'],
-           // example if you're using MUI
         }
       }
     },
